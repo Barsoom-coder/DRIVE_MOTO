@@ -71,24 +71,24 @@
   <div class="container">
     <div class="search__inner">
       <div class="search__tabs">
-        <a class="search__tabs-item search__tabs-item--active" href="#tab-1">Поиск по номеру</a>
-        <a class="search__tabs-item" href="#tab-2">Поиск по марке</a>
-        <a class="search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+        <a class="tab search__tabs-item tab--active" href="#tab-1">Поиск по номеру</a>
+        <a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
+        <a class="tab search__tabs-item" href="#tab-3">Поиск по названию товара</a>
       </div>
       <div class="search__content">
-        <div id="tab-1" class="search__content-item search__content-item--active">
+        <div id="tab-1" class="tabs-content search__content-item tabs-content--active">
           <form class="search__content-form" action="#">
             <input class="search__content-input" type="text" name="" id="" placeholder="Введите номер" />
             <button class="search__content-btn" type="submit">Искать</button>
           </form>
         </div>
-        <div id="tab-2" class="search__content-item">
+        <div id="tab-2" class="tabs-content search__content-item">
           <form class="search__content-form" action="#">
             <input class="search__content-input" type="text" name="" id="" placeholder="Введите марку" />
             <button class="search__content-btn" type="submit">Искать</button>
           </form>
         </div>
-        <div id="tab-3" class="search__content-item">
+        <div id="tab-3" class="tabs-content search__content-item">
           <form class="search__content-form" action="#">
             <input class="search__content-input" type="text" name="" id="" placeholder="Введите название товара" />
             <button class="search__content-btn" type="submit">Искать</button>
@@ -108,7 +108,7 @@
           <p class="categories__item-text">Подробее</p>
         </div>
         <div class="categories__item-img">
-          <img src="images/dist/categories/categories-1.png" alt="">
+          <img src="images/dist/categories/categories-1.png" alt="" />
         </div>
       </a>
 
@@ -118,7 +118,7 @@
           <p class="categories__item-text">Подробее</p>
         </div>
         <div class="categories__item-img">
-          <img src="images/dist/categories/categories-2.png" alt="">
+          <img src="images/dist/categories/categories-2.png" alt="" />
         </div>
       </a>
 
@@ -128,7 +128,7 @@
           <p class="categories__item-text">Подробее</p>
         </div>
         <div class="categories__item-img">
-          <img src="images/dist/categories/categories-3.png" alt="">
+          <img src="images/dist/categories/categories-3.png" alt="" />
         </div>
       </a>
 
@@ -138,7 +138,7 @@
           <p class="categories__item-text">Подробее</p>
         </div>
         <div class="categories__item-img">
-          <img src="images/dist/categories/categories-4.png" alt="">
+          <img src="images/dist/categories/categories-4.png" alt="" />
         </div>
       </a>
 
@@ -148,7 +148,7 @@
           <p class="categories__item-text">Подробее</p>
         </div>
         <div class="categories__item-img">
-          <img src="images/dist/categories/categories-5.png" alt="">
+          <img src="images/dist/categories/categories-5.png" alt="" />
         </div>
       </a>
 
@@ -158,11 +158,61 @@
           <p class="categories__item-text">Подробее</p>
         </div>
         <div class="categories__item-img">
-          <img src="images/dist/categories/categories-6.png" alt="">
+          <img src="images/dist/categories/categories-6.png" alt="" />
         </div>
       </a>
     </div>
   </div>
 </section>
 
+<section class="products">
+  <div class="container">
+    <div class="products__inner">
+      <div class="tabs__wrapper">
+        <div class="tabs products__tabs">
+          <a class="tab tab--active products__tab" href="#">запчасти</a>
+          <a class="tab products__tab" href="#">моторы</a>
+          <a class="tab products__tab" href="#">шины</a>
+          <a class="tab products__tab" href="#">электроника</a>
+          <a class="tab products__tab" href="#">инструменты</a>
+          <a class="tab products__tab" href="#">аксессуары</a>
+        </div>
+        <div class="tabs-container products__container">
+          <div class="tabs-content tabs-content--active products__content">
+            <div class="product-slider">
+              <div class="product-slider__item">
+                <a class="product-item" href="#">
+                  <button class="product-item__faforite">
+                  </button>
+                  <img class="product-item-img" src="images/src/products/product-1.png" alt="product icon">
+                  <h4 class="product-item__title">Водонепроницаемый
+                    Рюкзак</h4>
+                  <p class="price product-item__price">9 800</p>
+                  <button class="product-item__basket">
+                    <img src="images/dist/content/product-1.png" alt="white basket icon">
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content products__content"></div>
+          <div class="tabs-content products__content"></div>
+          <div class="tabs-content products__content"></div>
+          <div class="tabs-content products__content"></div>
+          <div class="tabs-content products__content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--#include virtual="/parts/footer.html" -->
+
+<!-- <div class="tabs__wrapper">
+  <div class="tabs">
+    <a class="tab tab--active" href="#"></a>
+  </div>
+  <div class="tabs-container">
+    <div class="tabs-content"></div>
+  </div>
+</div> -->

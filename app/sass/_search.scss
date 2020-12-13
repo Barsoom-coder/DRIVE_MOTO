@@ -2,9 +2,9 @@
 	&__tabs {
 		margin-bottom: 25px;
 	}
-	&__tabs-item {
+	&__tabs-item.tab {
 		padding: 11px 26px 12px;
-		&--active {
+		&--active.tab--active {
 			background: #F0F0F4;
 			border-radius: 5px;
 			font-weight: 700;
@@ -13,9 +13,9 @@
 	&__content-form {
 		display: flex;
 	}
-	&__content-item {
+	&__content-item.tabs-content {
 		display: none;
-		&--active {
+		&--active.tabs-content--active {
 			display: block;
 		}
 	}
