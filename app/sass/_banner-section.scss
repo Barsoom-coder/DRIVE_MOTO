@@ -1,0 +1,144 @@
+.banner-section {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__slider {
+		max-width: 870px;
+		max-height: 400px;
+	}
+	&__slider-img {
+		object-fit: cover;
+		min-height: 400px;
+	}
+	&__slider-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		margin: 0;
+		padding: 0;
+		z-index: 5;
+	}
+	&__slider-btnprev {
+		left: 20px;
+	}
+	&__slider-btnnext {
+		right: 20px;
+	}
+	.slick-dots {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 40px;
+		text-align: center; 
+	}
+	.slick-dots li {
+		display: inline-block;
+		padding: 0 5px; 
+	}
+	.slick-dots button {
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+		width: 11px;
+		height: 11px;
+		border: 1px solid #fff; 
+		border-radius: 50%;
+		background-color:  transparent;
+		&:focus {
+			background-color: #fff;
+		}
+	}
+	.sale-item {
+		max-width: 265px;
+		text-align: center;
+		border: 1px solid #CDCDCD;
+		border-radius: 3px;
+		display: flex;
+		max-height: 400px;
+		flex-direction: column;
+		justify-content: space-between;
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		&__info {
+			color: #fff;
+			background-color: $accent;
+			text-transform: uppercase;
+			padding: 8px 20px;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+		}
+		&__price {
+			font-family: 'Barlow', sans-serif;
+			text-align: right;
+		}
+		&__price-new {
+			font-weight: 700;
+			font-size: 27px;
+			line-height: 32px;
+			padding-right: 20px;
+			position: relative;
+			color: $accent;
+			&::after {
+				position: absolute;
+				content: '';
+				background-image: url(../images/dist/icons-price.svg);
+				right: 0;
+				top: 8px;
+				width: 15px;
+				height: 18px; 
+			}
+		}
+		&__price-old {
+			position: relative;
+			display: inline-block;
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 400;
+			color: #C4C4C4;
+			margin-right: 15px;
+			background-image: url(../images/dist/iconc-price-old-line.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 2px 5px;
+			&::after {
+				position: absolute;
+				content: '';
+				background-image: url(../images/dist/icons-price-old.svg);
+				right: -10px;
+				top: 6px;
+				width: 8px;
+				height: 10px; 
+			}
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 21px;
+			font-weight: 700;
+			// margin-bottom: 7px;
+		}
+		&__img {
+			object-fit: contain;
+		}
+		&__footer {
+			background: #F0F0F4;
+			border-radius: 3px;
+			padding: 25px 20px;
+			font-size: 18px;
+			line-height: 21px;
+			span {
+				font-family: 'Barlow', sans-serif;
+				display: block;
+				color: #1C62CD;
+				font-weight: 700;
+			}
+		}
+	}
+}
