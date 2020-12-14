@@ -11,7 +11,7 @@
 		object-fit: cover;
 		min-height: 400px;
 	}
-	&__slider-btn {
+	&__slider-btn{
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -74,10 +74,6 @@
 			font-size: 12px;
 			line-height: 15px;
 			letter-spacing: 0.1em;
-		}
-		&__price {
-			font-family: 'Barlow', sans-serif;
-			text-align: right;
 		}
 		&__price-new {
 			font-weight: 700;

@@ -13,12 +13,6 @@
 	&__content-form {
 		display: flex;
 	}
-	&__content-item.tabs-content {
-		display: none;
-		&--active.tabs-content--active {
-			display: block;
-		}
-	}
 	&__content-btn {
 		font-weight: 700;
 		font-size: 14px;
