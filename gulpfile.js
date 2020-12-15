@@ -22,7 +22,7 @@ function browsersync() {
 		tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
 		notify: false,
 		online: true
-	})
+	});
 }
 
 function scripts() {
