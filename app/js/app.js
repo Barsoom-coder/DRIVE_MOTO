@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     nextArrow:
       '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/dist/products/arrow-black-right.svg" alt="arrow right icon"></button>',
   });
+  
   $(".filter-style").styler();
 
   $(".filter__item-drop, .filter__extra").on("click", function (e) {
