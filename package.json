@@ -29,6 +29,8 @@
 		"webpack-stream": "^6.1.1"
 	},
 	"dependencies": {
+		"@rateyo/jquery": "^3.0.0-alpha.2",
+		"raty-js": "^3.0.0",
 		"slick-carousel": "^1.8.1"
 	}
 }

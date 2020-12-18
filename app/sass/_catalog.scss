@@ -67,6 +67,7 @@
 
   .aside-filter {
     &__tabs {
+      max-width: 242px;
       display: flex;
       justify-content: space-between;
     }

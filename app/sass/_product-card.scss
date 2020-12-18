@@ -1,0 +1,135 @@
+.product-card{
+	margin-bottom: 80px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__img-box {
+		max-width: 500px;
+		padding-top: 64px;
+		text-align: center;
+		position: relative;
+		&::before {
+			font-size: 15px;
+			line-height: 18px;
+			letter-spacing: 0.12em;
+			padding: 13px 25px;
+			border-radius: 3px;
+		}
+	}
+	&__price-old {
+		display: inline-block;
+		font-family: 'Barlow', sans-serif;	
+		font-size: 30px;
+		line-height: 36px;
+		color: #2F3035;
+		opacity: 0.6;
+		margin-bottom: 6px;
+		background-image: url(../images/dist/iconc-price-old-line.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: -9px;
+		background-position-y: -1px;
+	}
+	&__price-new {
+		font-family: 'Barlow', sans-serif;	
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 48px;
+		color: #2F3035;
+		margin-bottom: 17px;
+	}
+	&__link {
+		border-bottom: 1px solid #1C62CD;
+		font-size: 15px;
+		line-height: 18px;
+		color: #1C62CD;
+	}
+	&__content {
+		max-width: 570px;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 36px;
+		margin-bottom: 10px;
+	}
+	&__code {
+		font-size: 15px;
+		line-height: 18px;
+		color: #2F3035;
+		opacity: 0.6;
+		margin-bottom: 26px;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+		a {
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.range {
+		img {
+			margin-right: 1px;
+		}
+	}
+	&__tab {
+		font-size: 20px;
+		line-height: 24px;
+		color: #2F3035;
+		opacity: 0.6;
+		padding-bottom: 5px;
+		padding-right: 17px;
+		margin-bottom: 20px;
+		&:last-child {
+			padding-right: 0;
+			padding-left: 17px;
+		}
+	}
+	&__tab.tab--active {
+		border-bottom: 2px solid #1C62CD;
+		font-weight: 700;
+		opacity: 1;
+	}
+	&__list {
+		margin-bottom: 20px;
+	}
+	&__item {
+		padding: 15px 0 6px;
+		border-bottom: 1px solid rgba(#2F3035, 0.1);
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item-left {
+		padding-right: 15px;
+	}
+	&__item-right {
+		width: 125px;
+	}
+	&__more {
+		font-size: 14px;
+		line-height: 17px;
+		color: #1C62CD;
+		border-bottom: 1px solid #1C62CD;
+		margin-bottom: 40px;
+	}
+	&__btn {
+		button {
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			background: #1C62CD;
+			border-radius: 3px;
+			padding: 16px 53px;
+		}
+	}
+}
+
+ // font-family: 'Barlow', sans-serif;

@@ -83,7 +83,7 @@
 				height: 22px;
 				top: 0;
 				left: 0;
-				background-image: url(../images/dist/products/favorite.svg);
+				background-image: url(../images/dist/favorite.svg);
 			}
 			&--active {
 				&::before {
@@ -93,7 +93,7 @@
 					height: 22px;
 					top: 0;
 					left: 0;
-					background-image: url(../images/dist/products/favorite-active.svg);
+					background-image: url(../images/dist/favorite-active.svg);
 				}
 			}
 		}
