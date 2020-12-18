@@ -3,7 +3,7 @@ window.jQuery = $;
 window.$ = $; // import module example (npm i -D jquery)
 import Slick from "slick-carousel";
 import rangeSlider from "ion-rangeslider";
-import rateyo from "rateyo";
+import Raty from 'raty-js';
 require("../libs/formstyler.js");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -55,4 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
     $(".catalog__filter-btngrid").removeClass("catalog__filter-button--active");
     $(".product-item__wrap").addClass("product-item__wrap--list");
   });
+  
+  $('.range').raty({
+    path: '../images/dist',
+  });
 });
+
+
