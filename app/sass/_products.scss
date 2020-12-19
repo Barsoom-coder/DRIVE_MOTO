@@ -50,5 +50,17 @@
 	.products-slider__slider-btnprev {
 		left: -40px;
 	}
+
+	.product-slider .slick-dots {
+		bottom: -40px;
+	}
+
+	.product-slider .slick-dots button {
+		background: #C4C4C4;
+	}
+
+	.product-slider .slick-dots .slick-active button{
+		background: #1C62CD;
+	}
 }
 

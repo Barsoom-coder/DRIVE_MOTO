@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
       '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/dist/banner-section/arrow-left.svg" alt="arrow left icon"></button>',
     nextArrow:
       '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/dist/banner-section/arrow-right.svg" alt="arrow right icon"></button>',
+      responsive: [
+        {
+          breakpoint: 969,
+          settings: {
+            arrows: false,
+          }
+        },
+      ]    
   });
   $(".tab").on("click", function (e) {
     e.preventDefault();
@@ -31,6 +39,39 @@ document.addEventListener("DOMContentLoaded", () => {
       '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/dist/products/arrow-black-left.svg" alt="arrow left icon"></button>',
     nextArrow:
       '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/dist/products/arrow-black-right.svg" alt="arrow right icon"></button>',
+      responsive: [
+        {
+          breakpoint: 1301,
+          settings: {
+            arrows: false,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 1201,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 871,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 591,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+          }
+        },
+      ] 
   });
   
   $(".filter-style").styler();

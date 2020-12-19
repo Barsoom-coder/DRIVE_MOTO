@@ -28,30 +28,6 @@
 	&__slider-btnnext {
 		right: 20px;
 	}
-	.slick-dots {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 40px;
-		text-align: center; 
-	}
-	.slick-dots li {
-		display: inline-block;
-		padding: 0 5px; 
-	}
-	.slick-dots button {
-		padding: 0;
-		margin: 0;
-		font-size: 0;
-		width: 11px;
-		height: 11px;
-		border: 1px solid #fff; 
-		border-radius: 50%;
-		background-color:  transparent;
-		&:focus {
-			background-color: #fff;
-		}
-	}
 	.sale-item {
 		max-width: 265px;
 		text-align: center;
@@ -118,7 +94,6 @@
 			font-size: 18px;
 			line-height: 21px;
 			font-weight: 700;
-			// margin-bottom: 7px;
 		}
 		&__img {
 			object-fit: contain;
