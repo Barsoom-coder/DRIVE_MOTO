@@ -1,6 +1,4 @@
-import $ from "jquery";
-window.jQuery = $;
-window.$ = $; // import module example (npm i -D jquery)
+import $ from 'jquery'; window.jQuery = $; window.$ = $; // import jQuery module (npm i -D jquery)
 import Slick from "slick-carousel";
 import rangeSlider from "ion-rangeslider";
 import Raty from 'raty-js';
@@ -103,6 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   $('.menu__btn').on('click', function() {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+  });
+
+  $('.footer__topdrop').on('click', function () { 
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__topdrop--active');
+  });
+  $('.aside__btn').on('click', function () { 
+    $(this).next().slideToggle();
   });
 });
 

@@ -24,12 +24,10 @@
 		"gulp-sass": "^4.1.0",
 		"ion-rangeslider": "^2.3.1",
 		"jquery": "^3.5.1",
-		"jquery-form-styler": "^2.0.2",
-		"rateyo": "^3.0.0-alpha.2",
 		"webpack-stream": "^6.1.1"
 	},
 	"dependencies": {
-		"@rateyo/jquery": "^3.0.0-alpha.2",
+		"jquery-form-styler": "^2.0.2",
 		"raty-js": "^3.0.0",
 		"slick-carousel": "^1.8.1"
 	}

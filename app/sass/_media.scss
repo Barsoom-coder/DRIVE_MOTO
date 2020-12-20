@@ -19,6 +19,9 @@
   .banner__link img {
     width: 100%;
   }
+  .catalog__inner-list {
+    justify-content: space-around;
+  }
 }
 @media screen and (max-width: 1100px) {
   .header .menu__item + .menu__item {
@@ -28,6 +31,24 @@
     margin-right: 23px;
   }
 }
+@media screen and (max-width: 940px) {
+	.footer__top-inner {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.footer__top-item {
+		margin-bottom: 30px;
+  }
+  .catalog__filter-btn button{
+    display: none;
+  }
+  .catalog__filter {
+    display: block;
+  }
+  .catalog__filter-btn {
+    margin-top: 30px;
+  } 
+} 
 @media screen and (max-width: 968px) {
   .header__bottom {
     display: none;
@@ -68,11 +89,17 @@
   .mobile-overflow {
     width: 1000px;
   }
-  .tabs-wrapper {
+  .tabs-wrapper,.catalog__filter-itemsinner, .breadcrumbs__inner {
     overflow-x: scroll;
+  }
+  .tabs-wrapper.tabs-wrapper--no-scroll {
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 640px) {
+  .aside__btn {
+    display: block !important;
+  }
   .header__address {
     display: none;
   }
@@ -119,7 +146,73 @@
       visibility: hidden;
     }
   }
+  .catalog__inner {
+    flex-wrap: wrap;
+  }
 }
+@media screen and (max-width: 540px) {
+	.footer__top-item {
+		width: 100%;
+	}
+	.footer__bottom {
+		flex-direction: column;
+		align-items: start;
+	}
+	.footer__bottom-link {
+		margin: 12px 0;
+	}
+	.footer__top-inner {
+		justify-content: start;
+	}
+	.footer__top-newsletter.footer__top-item {
+		margin-right: auto;
+		margin-left: auto;
+		width: 290px;
+		text-align: center;
+	}
+	.footer__top-social.footer__top-item {
+    width: 100%;
+    border-bottom: none;
+	}
+	.social-list {
+		justify-content: center;
+  }
+  .footer-list {
+    display: none;
+  }
+  .footer__top-title.footer__topdrop {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7F7F7F;
+    padding: 15px 0;
+  }
+  .footer__top-item {
+    border-bottom: 2px solid #F9F9F4;
+  }
+  .footer__top-itemdrop {
+    margin-bottom: 0;
+    border-top: 2px solid #F9F9F4;
+  }
+  .footer__topdrop {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 12px;
+      height: 6px;
+      background-image: url(../images/dist/catalog/arrow-down.svg);
+      right: 0;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+    &--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+} 
 @media screen and (max-width: 440px) {
   .banner-section__slider-img {
     min-height: 164px;
@@ -129,6 +222,9 @@
   }
   .categories__item {
     padding: 20px 10px 16px;
+  }
+  .pagination-list__item {
+    margin: 0;
   }
 }
 @media screen and (max-width: 360px) {

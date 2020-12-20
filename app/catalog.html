@@ -3,22 +3,26 @@
 
 <div class="breadcrumbs">
   <div class="container">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__list-item"><a href="#">Главная</a></li>
-      <li class="breadcrumbs__list-item"><a href="#">Гидроциклы</a></li>
-    </ul>
+    <div class="breadcrumbs__inner">
+      <ul class="breadcrumbs__list mobile-overflow">
+        <li class="breadcrumbs__list-item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs__list-item"><a href="#">Гидроциклы</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <section class="catalog">
   <div class="container">
-    <h2 class="catalog__title"></h2>
+    <h2 class="catalog__title">Гидроциклы</h2>
     <div class="catalog__filter">
-      <div class="catalog__filter-items">
-        <button>Полноприводные</button>
-        <button>от 5000</button>
-        <button>BRP</button>
-        <button>еще</button>
+      <div class="catalog__filter-itemsinner">
+        <div class="catalog__filter-items mobile-overflow">
+          <button>Полноприводные</button>
+          <button>от 5000</button>
+          <button>BRP</button>
+          <button>еще</button>
+        </div>
       </div>
       <div class="catalog__filter-btn">
         <select class="filter-style select-item">
@@ -50,8 +54,9 @@
       </div>
     </div>
     <div class="catalog__inner">
+      <div class="aside__btn">Фильтр</div>
       <aside class="catalog__inner-aside aside-filter">
-        <div class="tabs__wrapper">
+        <div class="tabs__wrapper tabs-wrapper tabs-wrapper--no-scroll">
           <div class="tabs aside-filter__tabs">
             <a class="tab tab--active aside-filter__tab" href="#aside-filter-1">Параметры</a>
             <a class="tab aside-filter__tab" href="#aside-filter-2">по марке</a>
