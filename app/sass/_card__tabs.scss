@@ -23,7 +23,7 @@
 		margin-bottom: 10px;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.card__label-search {
 		font-size: 17px;
@@ -31,6 +31,8 @@
 		color: rgba(#2F3035, .7);
 	}
 	.card__input-search {
+		width: 312px;
+		height: 33px;
 		margin-left: 17px;
 		background: #F0F0F4;
 		border-radius: 3px;

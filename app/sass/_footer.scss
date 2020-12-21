@@ -76,4 +76,7 @@
 	.social-list__item + .social-list__item {
 		margin-left: 30px;
 	}
+	.footer__topdrop {
+		pointer-events: none;
+	}
 }
