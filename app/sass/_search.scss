@@ -4,10 +4,17 @@
 	}
 	&__tabs-item.tab {
 		padding: 11px 26px 12px;
+		animation: zoom-out;
+		animation-duration: 0.1s;
+		animation-timing-function: ease;
 		&--active.tab--active {
 			background: #F0F0F4;
 			border-radius: 5px;
 			font-weight: 700;
+			animation: zoom-in;
+			animation-duration: 0.3s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease;
 		}
 	}
 	&__content-form {
@@ -23,8 +30,13 @@
 		background: #1C62CD;
 		border-radius: 3px;
 		padding: 17px 40px;
-		border: none;
+		border: 2px solid transparent;
 		margin-left: -3px;
+		&:hover {
+			border: 2px solid #1C62CD;
+			background: #FFFFFF;
+			color: #1C62CD;
+		}
 	}
 	&__content-input {
 		background: #F0F0F4;

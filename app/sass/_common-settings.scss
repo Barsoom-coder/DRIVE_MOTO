@@ -48,6 +48,9 @@
     font-size: 18px;
     line-height: 21px;
     font-weight: 700;
+    &:hover {
+      color:  #2F3035 !important;
+    }
   }
   &__notify-link {
     display: none;
@@ -229,3 +232,22 @@
 .slick-dots .slick-active button {
 	background: #C4C4C4;
 }
+
+@keyframes zoom-in {
+	from {
+		font-weight: 400;
+	}
+	to {
+		font-weight: 600;
+	}
+}
+
+@keyframes zoom-out {
+	from {
+		font-weight: 600;
+	}
+	to {
+		font-weight: 400;
+	}
+}
+

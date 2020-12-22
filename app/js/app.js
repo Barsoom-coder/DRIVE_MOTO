@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     $(this).addClass("tab--active");
     $($(this).attr("href")).addClass("tabs-content--active");
 
-    $('.product-slider').slick('setPosition').
+    $('.product-slider').slick('setPosition');
   });
   $(".product-item__favorite").on("click", function (e) {
     $(this).toggleClass("product-item__favorite--active");

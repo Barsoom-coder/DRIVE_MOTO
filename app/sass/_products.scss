@@ -12,6 +12,7 @@
 	}
 	&__tab {
 		padding-bottom: 10px;
+		border-bottom: 2px solid transparent;
 	}
 	&__tab.tab--active {
 		border-bottom: 2px solid #1C62CD;
@@ -31,6 +32,11 @@
 		text-transform: uppercase;
 		background: #F0F0F4;
 		padding: 17px 43px;
+		border: 1px solid transparent;
+		transition: all 0.3s;
+		&:hover {
+				border: 1px solid $accent;
+		}
 	}
 
 	.products-slider__slider-btn {
@@ -62,5 +68,9 @@
 	.product-slider .slick-dots .slick-active button{
 		background: #1C62CD;
 	}
+	.product-item__notify-link {
+		border-bottom: 1px solid #1C62CD;
+	}
+
 }
 
